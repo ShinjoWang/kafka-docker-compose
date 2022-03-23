@@ -1,0 +1,27 @@
+version: '3'
+services:
+  peter-ansible01.foo.bar:
+    image: centos/ansible:latest
+    privileged: true
+  peter-kafka01.foo.bar:
+    image: centos/sshd:latest
+    privileged: true
+  peter-kafka02.foo.bar:
+    image: centos/sshd:latest
+    privileged: true
+  peter-kafka03.foo.bar:
+    image: centos/sshd:latest
+    privileged: true
+  peter-zk01.foo.bar:
+    image: centos/sshd:latest
+    privileged: true
+  peter-zk02.foo.bar:
+    image: centos/sshd:latest
+    privileged: true
+  peter-zk03.foo.bar:
+    image: centos/sshd:latest
+    privileged: true
+  # app:
+  #   image: gradle:7.4.1-jdk8
+  #   command: /bin/bash
+  #   tty: true
