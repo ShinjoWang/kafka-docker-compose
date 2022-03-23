@@ -111,6 +111,20 @@ $ ./restart_sshd.sh
 $ ./start_kafka.sh
 ```
 
+## Delete
+```bash
+$ docker compose down
+[+] Running 8/8
+ ⠿ Container kafka-docker-compose-peter-zk03.foo.bar-1       Removed    10.6s
+ ⠿ Container kafka-docker-compose-peter-kafka03.foo.bar-1    Removed    10.6s
+ ⠿ Container kafka-docker-compose-peter-kafka01.foo.bar-1    Removed    10.4s
+ ⠿ Container kafka-docker-compose-peter-ansible01.foo.bar-1  Removed    10.4s
+ ⠿ Container kafka-docker-compose-peter-zk02.foo.bar-1       Removed    10.4s
+ ⠿ Container kafka-docker-compose-peter-kafka02.foo.bar-1    Removed    10.6s
+ ⠿ Container kafka-docker-compose-peter-zk01.foo.bar-1       Removed    10.6s
+ ⠿ Network kafka-docker-compose_default                      Removed    0.1s
+```
+
 ## Test Spec
 - Docker Desktop 4.5.0 (74594)
 - Docker Engine 20.10.12
